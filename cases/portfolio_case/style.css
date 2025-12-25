@@ -1,0 +1,822 @@
+:root {
+  --color--orange: #d9542c;
+  --color--grey: #777068;
+  --accent-color: #0f95e8cc;
+  --cursor-color: #0f95e8;
+  --color--beige: #cfbfad;
+
+  --secondary: #e91e63;
+  --comment: #6a9955;
+  --keyword: #569cd6;
+  --text: #d4d4d4;
+  --bg: #1e1e1e;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-family: "Inconsolata", monospace;
+}
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e2021;
+  position: relative;
+  overflow: visible;
+}
+.text_section {
+  background-color: #343536;
+  width: 25%;
+  padding-left: 1%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+}
+.section_main {
+  width: 75%;
+}
+.section_h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--color--orange);
+}
+.content_section {
+  width: 75%;
+}
+.about_me {
+  font-family: "Inconsolata", monospace;
+  color: var(--color--beige);
+  font-weight: 100;
+  text-align: left;
+}
+/*.text_about {
+    color: #0f95e8cc;
+    font-size: 35px;
+    font-family: "Inconsolata", monospace;
+} */
+.text_about {
+  font-size: 35px;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.6;
+  padding-left: 30px;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.text_about::before {
+  content: "enum Contact {";
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+  animation: typing 2s steps(18, end) forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  color: var(--color--grey);
+  font-size: 20px;
+}
+
+.platform-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid #4d4a49;
+}
+
+.platform-item a {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  color: var(--keyword);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.platform-item:nth-child(1) {
+  animation: typing 1.5s steps(10, end) 3s forwards;
+}
+.platform-item:nth-child(2) {
+  animation: typing 1s steps(7, end) 4.8s forwards;
+}
+.platform-item:nth-child(3) {
+  animation: typing 2s steps(14, end) 6s forwards;
+}
+.platform-item:nth-child(4) {
+  animation: typing 1.2s steps(10, end) 8.2s forwards;
+}
+
+.text_about::after {
+  content: "}";
+  display: block;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 0.5s 9.5s forwards;
+  color: var(--color--grey);
+  font-size: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--cursor-color);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.code-block {
+  text-align: left;
+  font-family: "Inconsolata", monospace;
+}
+
+.code-line {
+  margin: 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards;
+}
+
+.line1 { animation: typing 3s steps(30, end) forwards; }
+.line2 { animation: typing 4s steps(40, end) 3.5s forwards; }
+.line3 { animation: typing 4s steps(40, end) 8s forwards; }
+.line4 { animation: typing 2s steps(20, end) 12.5s forwards; }
+.line5 { animation: typing 3s steps(30, end) 15s forwards; }
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+.comment {
+  color: var(--comment);
+  font-style: italic;
+}
+
+.keyword {
+  color: var(--keyword);
+  font-weight: bold;
+}
+
+.function {
+  color: #dcdcaa;
+}
+
+.string {
+  color: #ce9178;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Анимации для каждой строки */
+ 
+
+.part1 {
+  color: var(--color--beige);
+}
+
+.part2 {
+  color: var(--comment);
+}
+.blinking_cursor {
+  color: var(--comment);
+  animation: blink 1s step-end infinite;
+}
+.content_h1 {
+  margin-top: 6%;
+  margin-left: 50px;
+}
+.section_rectangle {
+  margin-left: 50px;
+  background-color: #343536;
+  border: 1px solid #343536;
+  margin-right: 40px;
+}
+.text_section_rectangle {
+  padding: 0 20px 0 20px;
+  color: var(--color--beige);
+  font-size: 18px;
+}
+.skills_list {
+  /* color: #777068;*/
+  color: var(--comment);
+  margin-top: 10px;
+  list-style: none;
+}
+.skills {
+  border-left: 1px solid #4d4a49;
+  margin-left: 30px;
+}
+.skills_list {
+  font-size: 16px;
+}
+.text_section_rectangle2 {
+  padding: 0 20px 0 20px;
+  color: var(--comment);
+  border-left: 1px solid #4d4a49;
+  margin-left: 30px;
+}
+.content-2_h1 {
+  margin-top: 4%;
+  margin-left: 50px;
+}
+.part1_2 {
+  color: var(--color--beige);
+}
+.part2_2 {
+  color: var(--comment);
+}
+.section_rectangle_2 {
+  margin-left: 50px;
+  background-color: #343536;
+  border: 1px solid #343536;
+  margin-right: 40px;
+}
+.education {
+  border-left: 1px solid #4d4a49;
+  margin-left: 30px;
+}
+.education_list {
+  color: var(--comment);
+  margin-top: 10px;
+  list-style: none;
+  text-align: left;
+ margin-right: 30px;
+}
+.content_section2 {
+  width: 75%;
+}
+.text_section_rectangle_2 {
+  padding: 0 20px 0 20px;
+  color: var(--color--beige);
+  font-size: 18px;
+}
+/* Стили для новой секции */
+.content_section3 {
+    width: 75%;
+}
+
+.content-3_h1 {
+    margin-top: 4%;
+    margin-left: 50px;
+}
+
+.part1_3 {
+    color: var(--color--beige);
+}
+
+.part2_3 {
+    color: var(--comment);
+}
+
+.section_rectangle_3 {
+    margin-left: 50px;
+    background-color: #343536;
+    border: 1px solid #343536;
+    margin-right: 40px;
+    padding: 20px 0;
+}
+
+.skills_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.tech_skills, .prof_skills {
+    width: 48%;
+    padding-left: 8px;
+}
+
+.skills_list_left, .skills_list_right {
+    border-left: 1px solid #4d4a49 ;
+    padding-left: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.skill_item {
+    color: var(--comment);
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.skill_item1 {
+  color: var(--keyword);
+  margin-top: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.skills_list_right .skill_item {
+    justify-content: flex-start;
+}
+
+.skill_level {
+    color: var(--color--beige);
+    font-weight: 500;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+ 
+ 
+.content-4_h1 {
+  margin-top: 4%;
+  margin-left: 50px;
+}
+
+.part1_4 {
+  color: var(--color--beige);
+  font-size: 25px;
+}
+
+.section_rectangle_4 {
+  margin-left: 50px;
+  background-color: #343536;
+  border: 1px solid #343536;
+  margin-right: 40px;
+}
+
+.text_section_rectangle_4 {
+  padding: 0 20px 0 20px;
+  color: var(--color--beige);
+  font-size: 18px;
+}
+
+.additional_info {
+  border-left: 1px solid #4d4a49;
+  margin-left: 30px;
+  padding-left: 20px;
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.info_item {
+  color: var(--comment);
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info_label {
+  color: var(--color--beige);
+  font-weight: 500;
+}
+
+.text_section_rectangle_4_bottom {
+  padding: 0 20px 20px 20px;
+  color: var(--color--orange);
+  font-size: 18px;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.last-section {
+  margin-bottom: 50px; }
+/* Очень маленькие устройства (iPhone SE и подобные, до 374px) */
+@media (max-width: 374px) {
+  .section_h1 {
+      font-size: 1.6rem;
+      line-height: 1.2;
+  }
+  
+  .about_me {
+      font-size: 0.9rem;
+  }
+  
+  .text_about {
+      font-size: 1rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+  
+  .text_about::before {
+      font-size: 0.8rem;
+      top: -1.5em;
+  }
+  
+  .platform-item {
+      font-size: 0.8rem;
+      padding-left: 20px;
+  }
+  
+  .content_h1, 
+  .content-2_h1, 
+  .content-3_h1, 
+  .content-4_h1 {
+      margin-top: 20px;
+      margin-left: 10px;
+      font-size: 1.2rem;
+  }
+  
+  .part1, .part1_2, .part1_3, .part1_4,
+  .part2, .part2_2, .part2_3 {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  .section_rectangle,
+  .section_rectangle_2,
+  .section_rectangle_3,
+  .section_rectangle_4 {
+      margin: 0 5px 15px 10px;
+      padding: 10px 0;
+  }
+  
+  .text_section_rectangle,
+  .text_section_rectangle_2,
+  .text_section_rectangle_4 {
+      font-size: 0.8rem;
+      padding: 0 10px;
+  }
+  
+  .skills,
+  .education,
+  .additional_info {
+      margin-left: 15px;
+      padding-left: 5px;
+  }
+  
+  .skills_list,
+  .education_list,
+  .info_item,
+  .skill_item,
+  .skill_item1 {
+      font-size: 0.75rem;
+      line-height: 1.4;
+  }
+  
+  .skill_item {
+      flex-direction: column;
+  }
+  
+  .skill_level {
+      margin-left: 0;
+      margin-top: 3px;
+  }
+  
+  .info_label {
+      display: block;
+      margin-bottom: 3px;
+  }
+  
+  .code-block {
+      font-size: 0.8rem;
+  }
+  
+  .code-line {
+      font-size: 0.75rem;
+  }
+  
+  .blinking_cursor {
+      display: none;
+  }
+}
+
+/* Маленькие устройства (375px - 767px) */
+@media (min-width: 375px) and (max-width: 767px) {
+  .main_container {
+      flex-direction: column;
+  }
+  
+  .text_section {
+      width: 100%;
+      position: relative;
+      height: auto;
+      padding: 15px;
+  }
+  
+  .section_main {
+      width: 100%;
+      margin-left: 0;
+  }
+  
+  .section_h1 {
+      font-size: 1.8rem;
+  }
+  
+  .about_me {
+      font-size: 1rem;
+  }
+  
+  .text_about {
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+  }
+  
+  .content_h1, 
+  .content-2_h1, 
+  .content-3_h1, 
+  .content-4_h1 {
+      margin-top: 30px;
+      margin-left: 15px;
+      font-size: 1.4rem;
+  }
+  
+  .section_rectangle,
+  .section_rectangle_2,
+  .section_rectangle_3,
+  .section_rectangle_4 {
+      margin: 0 10px 20px 15px;
+      padding: 15px 0;
+  }
+  
+  .text_section_rectangle,
+  .text_section_rectangle_2,
+  .text_section_rectangle_4 {
+      font-size: 0.9rem;
+      padding: 0 15px;
+  }
+  
+  .skills_list,
+  .education_list,
+  .info_item,
+  .skill_item,
+  .skill_item1 {
+      font-size: 0.85rem;
+  }
+  
+  .skills_container {
+      flex-direction: column;
+  }
+  
+  .tech_skills, 
+  .prof_skills {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .skills_list_left, 
+  .skills_list_right {
+      padding-left: 15px;
+  }
+  
+  .skill_item {
+      flex-direction: column;
+  }
+  
+  .skill_level {
+      margin-left: 0;
+      margin-top: 5px;
+  }
+  
+  .additional_info {
+      margin-left: 20px;
+      padding-left: 10px;
+  }
+  
+  .info_label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  .code-block {
+      overflow-x: auto;
+  }
+  
+  .code-line {
+      white-space: pre;
+  }
+}
+ 
+
+/* Горизонтальная ориентация на маленьких экранах */
+@media (max-width: 767px) and (orientation: landscape) {
+  .text_section {
+      padding: 10px;
+  }
+  
+  .section_h1 {
+      font-size: 1.5rem;
+  }
+  
+  .text_about {
+      font-size: 0.9rem;
+      margin: 10px 0;
+  }
+  
+  .content_h1, 
+  .content-2_h1, 
+  .content-3_h1, 
+  .content-4_h1 {
+      margin-top: 15px;
+      margin-left: 10px;
+      font-size: 1.1rem;
+  }
+  
+  .skills_container {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  
+  .tech_skills, 
+  .prof_skills {
+      width: 48%;
+  }
+  
+  .code-block {
+      font-size: 0.85rem;
+  }
+}
+
+/* Планшеты (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text_section {
+      width: 40%;
+      padding: 20px 15px;
+  }
+  
+  .section_main {
+      width: 60%;
+  }
+  
+  .section_h1 {
+      font-size: 2.2rem;
+  }
+  
+  .about_me {
+      font-size: 1.1rem;
+  }
+  
+  .text_about {
+      font-size: 1.3rem;
+  }
+  
+  .content_h1, 
+  .content-2_h1, 
+  .content-3_h1, 
+  .content-4_h1 {
+      margin-left: 30px;
+      font-size: 1.6rem;
+  }
+  
+  .section_rectangle,
+  .section_rectangle_2,
+  .section_rectangle_3,
+  .section_rectangle_4 {
+      margin: 0 20px 30px 30px;
+  }
+  
+  .text_section_rectangle,
+  .text_section_rectangle_2,
+  .text_section_rectangle_4 {
+      font-size: 0.95rem;
+  }
+  
+  .skills_list,
+  .education_list,
+  .info_item,
+  .skill_item,
+  .skill_item1 {
+      font-size: 0.9rem;
+  }
+  
+  .skills_container {
+      flex-wrap: wrap;
+  }
+  
+  .tech_skills, 
+  .prof_skills {
+      width: 100%;
+  }
+}
+
+/* Десктопы (1024px и выше) */
+@media (min-width: 1024px) {
+  .text_section {
+      width: 30%;
+      padding: 20px 20px 20px 30px;
+  }
+  
+  .section_main {
+      width: 70%;
+  }
+  
+  .section_h1 {
+      font-size: 3rem;
+  }
+  
+  .about_me {
+      font-size: 1.3rem;
+  }
+  
+  .text_about {
+      font-size: 1.6rem;
+  }
+   
+  .content_h1, 
+  .content-2_h1, 
+  .content-3_h1, 
+  .content-4_h1 {
+      margin-left: 50px;
+      font-size: 2rem;
+  }
+  
+  .section_rectangle,
+  .section_rectangle_2,
+  .section_rectangle_3,
+  .section_rectangle_4 {
+      margin: 0 40px 40px 50px;
+      padding: 25px 0;
+  }
+  
+  .text_section_rectangle,
+  .text_section_rectangle_2,
+  .text_section_rectangle_4 {
+      font-size: 1.1rem;
+  }
+  
+  .skills_list,
+  .education_list,
+  .info_item,
+  .skill_item,
+  .skill_item1 {
+      font-size: 1rem;
+  }
+  
+  .skills_container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .tech_skills, 
+  .prof_skills {
+      width: 48%;
+  }
+}
+
+/* Большие десктопы (1200px и выше) */
+@media (min-width: 1200px) {
+  .text_section {
+      width: 25%;
+  }
+  
+  .section_main {
+      width: 75%;
+  }
+  
+  .section_h1 {
+      font-size: 3.5rem;
+  }
+  
+  .text_about {
+      font-size: 1.8rem;
+  }
+  
+  .content_h1, 
+  .content-2_h1, 
+  .content-3_h1, 
+  .content-4_h1 {
+      font-size: 2.2rem;
+  }
+  
+  .section_rectangle,
+  .section_rectangle_2,
+  .section_rectangle_3,
+  .section_rectangle_4 {
+      margin: 0 50px 50px 60px;
+  }
+}

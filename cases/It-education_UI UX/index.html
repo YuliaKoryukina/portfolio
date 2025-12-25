@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейс: Сервис по IT образованию | YuliaKoryukina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="case-header">
+        <a href="../../index.html" class="case-header-logo">Назад в портфолио</a>
+        <nav class="case-header-nav">
+            <ul class="case-header-nav-list">
+                <li><a href="#flow_stories" class="case-header-nav-link">User Flow & User Stories</a></li>
+                <li><a href="#prototype" class="case-header-nav-link">Prototype</a></li>
+                <li><a href="#UIKit" class="case-header-nav-link">UI Kit</a></li>
+                <li><a href="#Design" class="case-header-nav-link">Design</a></li>
+                <li><a href="#figma" class="case-header-nav-link">Figma</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="case-hero">
+        <div class="case-hero-floating"></div>
+        <div class="case-hero-floating"></div>
+        <div class="case-hero-floating"></div>
+        <div class="case-hero-content">
+            <div class="case-hero-text">
+                <h1 class="case-hero-title">Сервис по IT образованию <br><span class="case-highlight">UX/UI
+                        дизайн</span></h1>
+                <p class="case-hero-subtitle">Учебный проект платформы онлайн-обучения для начинающих IT-специалистов.
+                </p>
+                <div class="work-stages-section">
+                    <h3 class="work-stages-heading">Этапы работы</h3>
+                    <p class="work-stages-text">
+                        Пользовательский сценарий<br>
+                        Прототип<br>
+                        Набор элементов пользовательского интерфейса<br>
+                        Компоненты<br>
+                        Дизайн рабочего стола
+                    </p>
+                </div>
+            </div>
+            <div class="case-hero-image">
+                <img src="img/Home.svg" alt="IT Education Platform">
+            </div>
+        </div>
+    </section>
+    <section id="flow_stories" class="case-section">
+        <div class="case-container">
+            <h2 class="section-title">User Flow & User Stories</h2>
+            <div class="roles-tabs">
+                <button class="role-tab active" data-role="student">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Ученик</span>
+                </button>
+                <button class="role-tab" data-role="director">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Ген. Директор</span>
+                </button>
+                <button class="role-tab" data-role="admin">
+                    <i class="fas fa-user-cog"></i>
+                    <span>Администратор</span>
+                </button>
+            </div>
+            <div class="flow-container">
+                <div class="flow-slide active" id="student-flow">
+                    <div class="flow-diagram">
+                        <h3>Роль Ученик: Покупка и просмотр курсов</h3>
+                        <div class="diagram-image">
+                            <img src="img/role-student.svg" alt="User Flow для ученика" class="flow-svg">
+                        </div>
+                    </div>
+                    <div class="user-stories">
+                        <h4>User Stories Ученика:</h4>
+                        <ul>
+                            <li>Я, как ученик обучающей платформы должен иметь возможность просматривать обучающие
+                                курсы, чтобы приобретать необходимое обучение</li>
+                            <li>Я, как ученик обучающей платформы должен иметь возможность купить онлайн-курс (полная
+                                стоимость и рассрочка), чтобы проходить обучение онлайн</li>
+                            <li>Я, как ученик обучающей платформы должен иметь возможность видеть купленные мною курсы,
+                                чтобы быстро взаимодействовать с ними</li>
+                            <li>Я, как ученик обучающей платформы должен иметь возможность добавить курс в избранное,
+                                чтобы не потерять полезные материалы</li>
+                            <li>Я, как ученик обучающей платформы должен иметь возможность фильтровать доступные курсы
+                                по популярности, скидке и бесплатному обучению, чтобы быстрее находить подходящие
+                                предложения</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flow-slide" id="director-flow">
+                    <div class="flow-diagram">
+                        <h3>Роль Ген. Директора: Управление курсами</h3>
+                        <div class="diagram-image">
+                            <img src="img/role-director.svg" alt="User Flow для ген. директора" class="flow-svg">
+                        </div>
+                    </div>
+                    <div class="user-stories">
+                        <h4>User Stories Ген. Директора:</h4>
+                        <ul>
+                            <li>Я, как Генеральный директор обучающей платформы, должен иметь возможность добавлять
+                                курсы на платформе, чтобы управлять учебным контентом</li>
+                            <li>Я, как Генеральный директор обучающей платформы, должен иметь возможность удалять курсы
+                                на платформе, чтобы управлять учебным контентом</li>
+                            <li>Я, как Генеральный директор обучающей платформы, должен иметь возможность устанавливать
+                                скидки и акции на курсы, чтобы привлекать новых учеников и стимулировать продажи</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flow-slide" id="admin-flow">
+                    <div class="flow-diagram">
+                        <h3>Роль Администратора: Аналитика и фидбэк</h3>
+                        <div class="diagram-image">
+                            <img src="img/administrator-role.svg" alt="User Flow для администратора" class="flow-svg">
+                        </div>
+                    </div>
+                    <div class="user-stories">
+                        <h4>User Stories Администратора:</h4>
+                        <ul>
+                            <li>Я, как администратор обучающей платформы должен иметь возможность просматривать
+                                статистические данные по купленным курсам, выручке по месяцам, и продажам по
+                                направлениям, чтобы делать ежемесячные отчеты</li>
+                            <li>Я, как администратор обучающей платформы должен иметь возможность просматривать обратную
+                                связь от учеников по купленным курсам, чтобы влиять на качество образования и сервиса
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flow-navigation">
+                <button class="nav-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="dots-indicator">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="nav-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <section id="prototype" class="case-section">
+            <div class="case-container">
+                <h2 class="section-title">Прототипы интерфейсов</h2>
+                <div class="prototypes-intro">
+                    <p>Ключевые экраны образовательной платформы</p>
+                </div>
+                <div class="prototypes-slider">
+                    <button class="slider-arrow prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-container">
+                        <div class="prototype-slide active">
+                            <div class="prototype-image">
+                                <img src="img/catalog.svg" alt="Каталог курсов" class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Каталог курсов</p>
+                        </div>
+                        <div class="prototype-slide">
+                            <div class="prototype-image">
+                                <img src="img/personal-account.svg" alt="Личный кабинет" class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Личный кабинет</p>
+                        </div>
+                        <div class="prototype-slide">
+                            <div class="prototype-image">
+                                <img src="img/webinar.svg" alt="Вебинар" class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Вебинар</p>
+                        </div>
+                        <div class="prototype-slide">
+                            <div class="prototype-image">
+                                <img src="img/authorization.svg" alt="Авторизация" class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Авторизация</p>
+                        </div>
+                        <div class="prototype-slide">
+                            <div class="prototype-image">
+                                <img src="img/administrator-personal-account.svg" alt="ЛК администратора"
+                                    class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Личный кабинет администратора</p>
+                        </div>
+                        <div class="prototype-slide">
+                            <div class="prototype-image">
+                                <img src="img/adding-course.svg" alt="Добавление курса" class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Добавление курса</p>
+                        </div>
+                        <div class="prototype-slide">
+                            <div class="prototype-image">
+                                <img src="img/review.svg" alt="Отзыв" class="prototype-img">
+                            </div>
+                            <p class="prototype-caption">Отзыв</p>
+                        </div>
+                    </div>
+                    <button class="slider-arrow next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="slider-dots">
+                    <span class="slider-dot active" data-slide="0"></span>
+                    <span class="slider-dot" data-slide="1"></span>
+                    <span class="slider-dot" data-slide="2"></span>
+                    <span class="slider-dot" data-slide="3"></span>
+                    <span class="slider-dot" data-slide="4"></span>
+                    <span class="slider-dot" data-slide="5"></span>
+                    <span class="slider-dot" data-slide="6"></span>
+                </div>
+            </div>
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="modalCaption" class="modal-caption"></div>
+            </div>
+        </section>
+    </section>
+    <section id="UIKit" class="case-section">
+        <div class="case-container">
+            <h2 class="section-title">Базовые UI-компоненты</h2>
+            <p class="section-subtitle">Основные компоненты: основные и второстепенные кнопки, аватар пользователя,
+                рейтинг, индикатор прогресса обучения, компоненты авторизации</p>
+            <div class="ui-single-container">
+                <div class="ui-single-image">
+                    <img src="img/basic-UI.svg" alt="UI компоненты платформы" class="ui-full-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Design" class="case-section">
+        <div class="case-container">
+            <h2 class="section-title">Дизайн платформы</h2>
+            <p class="section-subtitle">Ключевые экраны и интерфейсы</p>
+            <div class="design-slider">
+                <button class="slider-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-container">
+                    <div class="design-slide active">
+                        <div class="design-image">
+                            <img src="img/Home.svg" alt="Дизайн 1" class="design-img">
+                        </div>
+                        <p class="design-caption">Главная страница</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/about.svg" alt="О нас" class="design-img">
+                        </div>
+                        <p class="design-caption">О нас</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/catalog-design.svg" alt="Каталог курсов" class="design-img">
+                        </div>
+                        <p class="design-caption">Каталог курсов</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/webinar-design.svg" alt="Дизайн 5" class="design-img">
+                        </div>
+                        <p class="design-caption">Вебинар</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/news-design.svg" alt="Новости" class="design-img">
+                        </div>
+                        <p class="design-caption">Новости</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/authorization-design.svg" alt="Авторизация" class="design-img">
+                        </div>
+                        <p class="design-caption">Авторизация</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/authorization-design2.svg" alt="Авторизация" class="design-img">
+                        </div>
+                        <p class="design-caption">Авторизация - подтверждение</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/personal-aaount_design.svg" alt="ЛК" class="design-img">
+                        </div>
+                        <p class="design-caption">Личный кабинет</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/personal-account2.svg" alt="ЛК" class="design-img">
+                        </div>
+                        <p class="design-caption">Личный кабинет - переключение фильтров</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/personal-account_review.svg" alt="ЛК" class="design-img">
+                        </div>
+                        <p class="design-caption">Личный кабинет - отзыв</p>
+                    </div>
+                    <div class="design-slide">
+                        <div class="design-image">
+                            <img src="img/payment.svg" alt="Оплата" class="design-img">
+                        </div>
+                        <p class="design-caption">Оплата</p>
+                    </div>
+                </div>
+                <button class="slider-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots">
+                <span class="slider-dot active" data-slide="0"></span>
+                <span class="slider-dot" data-slide="1"></span>
+                <span class="slider-dot" data-slide="2"></span>
+                <span class="slider-dot" data-slide="3"></span>
+                <span class="slider-dot" data-slide="4"></span>
+                <span class="slider-dot" data-slide="5"></span>
+                <span class="slider-dot" data-slide="6"></span>
+                <span class="slider-dot" data-slide="7"></span>
+                <span class="slider-dot" data-slide="8"></span>
+                <span class="slider-dot" data-slide="9"></span>
+                <span class="slider-dot" data-slide="10"></span>
+            </div>
+        </div>
+    </section>
+    <footer id="figma" class="case-footer">
+        <div class="figma-footer-section">
+            <a href="https://www.figma.com/file/d4RLMMF2DZztgdLTISPHHV/IT-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5?node-id=0-1&t=LlxxgnYLOwBtkAj1-1"
+                target="_blank" class="figma-footer-btn">
+                <i class="fab fa-figma"></i>
+                Открыть полный проект в Figma
+            </a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025. Created by Yulia Koryukina.</p>
+            <div class="footer-links">
+                <a href="mailto:koryuckina.yu@yandex.ru"><i class="fas fa-envelope"></i></a>
+                <a href="https://t.me/silence_julia" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/in/koryukina-yulia/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="sliders.js">
+    </script>
+</body>
+</html>

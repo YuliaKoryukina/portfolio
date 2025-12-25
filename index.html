@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuliaKoryukina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="myportfolio.css">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="floating"></div>
+    <div class="floating"></div>
+    <div class="floating"></div>
+    <header>
+        <a href="#" class="logo">YuliaKoryukina</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Работы</a></li>
+                <li><a href="#sertificats">Сертификаты</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Привет, я <span class="highlight">Начинающий веб-разработчик и UI/UX дизайнер</span></h1>
+            <p>Изучаю создание современных интерфейсов и чистый код. <br>
+                Стремлюсь объединять визуальную эстетику с технической реализацией. 
+                В своих работах экспериментирую, расту в профессии <br> и ищу свой стиль.</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Тбилиси, Грузия</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-language"></i>
+                    <span>Русский (родной), Английский (A2)</span>
+                </div>
+            </div>
+            <a href="#portfolio" class="btn">Посмотреть работы</a>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Мои работы</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Все работы</button>
+            <button class="filter-btn" data-filter="web">Веб-разработка</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX Дизайн</button>
+            <button class="filter-btn" data-filter="motion">Stop Motion</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-item" data-category="uiux">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/figma_case.svg" alt="Дизайн веб-платформы">
+                    <div class="project-overlay">
+                        <a href="cases/It-education_UI UX/index.html" class="view-btn" target="_blank">Посмотреть кейс</a>
+                    </div>
+                </div>
+                <p class="project-text">Сервис по IT образованию - UI/UX дизайн</p>
+                <div class="project-tags">
+                    <span class="project-tag">UI/UX Design</span>
+                    <span class="project-tag">User Flow</span>
+                    <span class="project-tag">Wireframes</span>
+                    <span class="project-tag">Дизайн система</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/house_rent_case.svg" alt="Лендинг аренды">
+                    <div class="project-overlay">
+                        <a href="cases/renthouse_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Лендинг аренды</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Адаптивный дизайн</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img"
+                        src="img/portfolio_case.png"
+                        alt="Сайт визитка">
+                    <div class="project-overlay">
+                        <a href="cases/portfolio_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Сайт визитка</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Сайт-портфолио</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img"
+                        src="img/honey_case.svg"
+                        alt="Лендинг магазина">
+                    <div class="project-overlay">
+                        <a href="cases/honey_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Лендинг магазина</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Интернет-магазин</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/pipernet_case.svg" alt="Лендинг IT компании">
+                    <div class="project-overlay">
+                          <a href="cases/pipernet_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Лендинг IT компании</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Корпоративный сайт</span>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/automotive_case.svg" alt="Лендинг продажи машин">
+                    <div class="project-overlay">
+                         <a href="cases/automotive_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Лендинг продажи машин</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Автотематика</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/konstruct_case.svg" alt="Лендинг строительной компании">
+                    <div class="project-overlay">
+                          <a href="cases/konstruct_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Лендинг строительной компании</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Бизнес-сайт</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/shop_case-1.png" alt="Лендинг магазина">
+                    <div class="project-overlay">
+                        <a href="cases/shop_case/index.html" class="view-btn" target="_blank">Посмотреть проект</a>
+                    </div>
+                </div>
+                <p class="project-text">Лендинг магазина</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Интернет-магазин</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="motion">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/stop_motion_case_1.jpg" alt="Stop Motion проект 1">
+                    <div class="project-overlay">
+                        <a href="https://kwork.ru/portfolio/13024134" class="view-btn" target="_blank">Смотреть видео</a>
+                    </div>
+                </div>
+                <p class="project-text">Анимация для Games wizard</p>
+                <div class="project-tags">
+                    <span class="project-tag">Stop Motion</span>
+                    <span class="project-tag">Мобильная анимация</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="motion">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/stop_motion_case_2.jpg" alt="Stop Motion проект 2">
+                    <div class="project-overlay">
+                        <a href="https://kwork.ru/portfolio/12441741" class="view-btn" target="_blank">Смотреть видео</a>
+                    </div>
+                </div>
+                <p class="project-text">Анимация для Telegram бота</p>
+                <div class="project-tags">
+                    <span class="project-tag">Stop Motion</span>
+                    <span class="project-tag">Мобильная анимация</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="motion">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/stop_motion_case_3.jpg" alt="Stop Motion проект 3">
+                    <div class="project-overlay">
+                        <a href="https://kwork.ru/portfolio/19501269" class="view-btn" target="_blank">Смотреть видео</a>
+                    </div>
+                </div>
+                <p class="project-text">Социальная анимация о зависимости от гаджетов у подростков.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Stop Motion</span>
+                    <span class="project-tag">Мобильная анимация</span>
+                </div>
+            </div>
+            <div class="project-item" data-category="motion">
+                <div class="project-img-container">
+                    <img class="project_img" src="img/stop_motion_case_4.jpg" alt="Stop Motion проект 4">
+                    <div class="project-overlay">
+                        <a href="https://kwork.ru/portfolio/12441337" class="view-btn" target="_blank">Смотреть видео</a>
+                    </div>
+                </div>
+                <p class="project-text">Анимация для презентации</p>
+                <div class="project-tags">
+                    <span class="project-tag">Stop Motion</span>
+                    <span class="project-tag">Мобильная анимация</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sertificats" class="sertificats">
+        <h2 class="section-title">Мои сертификаты</h2>
+        <div class="sertificats-container">
+            <a href="https://stepik.org/cert/2157628" target="_blank"
+                class="sertificat-card">
+                <h3 class="sertificat-title">Web-технологии: начальный уровень</h3>
+                <p class="sertificat-source">Stepik</p>
+            </a>
+            <a href="https://mooc.lektorium.tv/certificates/bb9dff35a1374622aa2c6ed4c705be2d" target="_blank" 
+                target="_blank" class="sertificat-card">
+                <h3 class="sertificat-title">Курс «История ЭВМ и программирования»</h3>
+                <p class="sertificat-source">Лекториум</p>
+            </a>
+            <a href="https://stepik.org/cert/2054749" target="_blank"
+                class="sertificat-card">
+                <h3 class="sertificat-title">Веб-разработка для начинающих: HTML и CSS</h3>
+                <p class="sertificat-source">Stepik</p>
+            </a>
+            <a href="https://stepik.org/cert/2540010" target="_blank"
+                class="sertificat-card">
+                <h3 class="sertificat-title">FRONTEND: HTML CSS JS</h3>
+                <p class="sertificat-source">Stepik</p>
+            </a>
+            <a href="https://stepik.org/cert/2702232" target="_blank"
+                class="sertificat-card">
+                <h3 class="sertificat-title">JavaScript для начинающих</h3>
+                <p class="sertificat-source">Stepik</p>
+            </a>
+            <a href="https://stepik.org/cert/3015415" target="_blank" class="sertificat-card">
+                <h3 class="sertificat-title">Полный курс по UI/UX и веб-дизайну в Figma</h3>
+                <p class="sertificat-source">Stepik</p>
+            </a>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Мои навыки</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3 class="skill-title">HTML</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 95%;"></div>
+                    <span class="level-text">Уверенно</span>
+                </div>
+                <p class="skill-description">Семантическая верстка, доступность, современные теги</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3 class="skill-title">CSS</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 90%;"></div>
+                    <span class="level-text">Уверенно</span>
+                </div>
+                <p class="skill-description">Flexbox, Grid, анимации, адаптивный дизайн</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-figma"></i>
+                    <span class="learning-badge">Изучаю</span>
+                </div>
+                <h3 class="skill-title">Figma</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 55%;"></div>
+                    <span class="level-text">Продолжаю изучать</span>
+                </div>
+                <p class="skill-description">Прототипирование, макеты, компоненты, авто-лейаут</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-project-diagram"></i>
+                    <span class="learning-badge">Изучаю</span>
+                </div>
+                <h3 class="skill-title">User Flow</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 50%;"></div>
+                    <span class="level-text">Развиваю навыки</span>
+                </div>
+                <p class="skill-description">Проектирование пользовательских сценариев и навигации</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span class="learning-badge">Изучаю</span>
+                </div>
+                <h3 class="skill-title">UI Design</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 55%;"></div>
+                    <span class="level-text">Осваиваю</span>
+                </div>
+                <p class="skill-description">Визуальный дизайн, типографика, композиция, цвет</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-crop-alt"></i>
+                </div>
+                <h3 class="skill-title">Photoshop</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 60%;"></div>
+                    <span class="level-text">Начальный уровень</span>
+                </div>
+                <p class="skill-description">Создание веб-элементов, ретушь и обработка фото, цифровая иллюстрация</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                    <span class="learning-badge">Изучаю</span>
+                </div>
+                <h3 class="skill-title">JavaScript</h3>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 15%;"></div>
+                    <span class="level-text">Активно изучаю</span>
+                </div>
+                <p class="skill-description">Синтаксис ES6+, функции, работа с объектами и массивами</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Связь со мной</h2>
+        <div class="contact-links">
+            <a href="mailto:koryuckina.yu@yandex.ru" class="contact-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://t.me/silence_julia" target="_blank" class="contact-link">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/koryukina-yulia/" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025. Created by Yulia Koryukina.</p>
+    </footer>
+
+    <script>
+        // Фильтрация портфолио
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Убираем активный класс у всех кнопок
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projectItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Решение проблемы с обрезанием заголовка при загрузке страницы с якорем
+            if (window.location.hash) {
+                const hash = window.location.hash;
+                const target = document.querySelector(hash);
+                
+                if (target && hash === '#sertificats') {
+                    setTimeout(() => {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        window.scrollTo({
+                            top: target.offsetTop - headerHeight - 20,
+                            behavior: 'instant'
+                        });
+                    }, 50);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
