@@ -582,6 +582,7 @@ footer {
   .btn {
     padding: 12px 25px;
     font-size: 0.9rem;
+    margin: 5px;
   }
 }
 @media (max-width: 420px) {
